@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +34,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!<rootDir>/src/reportWebVitals.js",
+      "!<rootDir>/src/index.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "text-summary"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.0"
   }
 }
