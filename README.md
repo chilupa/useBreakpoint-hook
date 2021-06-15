@@ -1,6 +1,6 @@
 # useBreakpoint Hook
 
-A customized react hook, `useDimensions` will help you get the breakpoint based on the device width.
+A customized react hook, `useBreakpoint` will help you get the breakpoint based on the device width.
 
 ## Available Scripts
 
