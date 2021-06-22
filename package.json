@@ -14,7 +14,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage --watchAll=false",
+    "test": "react-scripts test",
+    "tc": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,7 +39,8 @@
   "jest": {
     "collectCoverageFrom": [
       "!<rootDir>/src/reportWebVitals.js",
-      "!<rootDir>/src/index.js"
+      "!<rootDir>/src/index.js",
+      "!<rootDir>/src/**/__tests__/__snapshots__/*.test.js.snap"
     ],
     "coverageReporters": [
       "text",
